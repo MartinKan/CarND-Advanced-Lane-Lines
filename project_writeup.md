@@ -28,7 +28,7 @@ The goals / steps of this project are the following:
 [image7]: ./output_images/window-topdownonly.jpg "Top Down Windows"
 [image8]: ./output_images/window-topandbottom.jpg "Top and Bottom Windows"
 [image9]: ./output_images/window-topandbottom-falsepositive.jpg "False positive in sliding windows"
-[image10]: ./output_images/test1-final.jpg "Road Final"
+[image10]: ./output_images/test1_final.jpg "Road Final"
 [video1]: ./output_images/final_video_out.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
@@ -54,7 +54,7 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
 Before calibration
-![alt text][image2]
+![alt text][image1]
 
 After calibration
 ![alt text][image2]
