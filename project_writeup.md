@@ -1,6 +1,5 @@
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
+## Udacity Self Driving Car Nanodegree
+## Project Writeup
 
 ---
 
@@ -24,7 +23,8 @@ The goals / steps of this project are the following:
 [image3]: ./test_images/test1.jpg "Road Before Transformed"
 [image4]: ./output_images/test1_transformed.jpg "Road After Transformed"
 [image5]: ./output_images/test1_binary.jpg "Road After Binary"
-[image6]: ./output_images/test1_warped.jpg "Road After Warping"
+[image6]: ./output_images/straight_lines_undistorted.jpg "Road Before Warping"
+[image6A]: ./output_images/straight_lines_warped.jpg "Road After Warping"
 [image7]: ./output_images/windows-topdownonly.jpg "Top Down Windows"
 [image8]: ./output_images/windows-topandbottom.jpg "Top and Bottom Windows"
 [image9]: ./output_images/windows-topandbottom-falsepositive.jpg "False positive in sliding windows"
@@ -53,11 +53,11 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
-![alt text][image2]
 Before calibration
-
 ![alt text][image2]
+
 After calibration
+![alt text][image2]
 
 The camera calibration and distortion coefficients computed above are then saved to a pickle file (wide_dist_pickle.p) for later use.
 
@@ -117,7 +117,11 @@ This resulted in the following source and destination points:
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
 
+Before Transformation:
 ![alt text][image6]
+
+After Transformation:
+![alt text][image6A]
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
