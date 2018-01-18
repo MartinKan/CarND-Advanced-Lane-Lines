@@ -25,9 +25,9 @@ The goals / steps of this project are the following:
 [image5]: ./output_images/test1_binary.jpg "Road After Binary"
 [image6]: ./output_images/straight_lines_undistorted.jpg "Road Before Warping"
 [image6A]: ./output_images/straight_lines_warped.jpg "Road After Warping"
-[image7]: ./output_images/windows-topdownonly.jpg "Top Down Windows"
-[image8]: ./output_images/windows-topandbottom.jpg "Top and Bottom Windows"
-[image9]: ./output_images/windows-topandbottom-falsepositive.jpg "False positive in sliding windows"
+[image7]: ./output_images/window-topdownonly.jpg "Top Down Windows"
+[image8]: ./output_images/window-topandbottom.jpg "Top and Bottom Windows"
+[image9]: ./output_images/window-topandbottom-falsepositive.jpg "False positive in sliding windows"
 [image10]: ./output_images/test1-final.jpg "Road Final"
 [video1]: ./output_images/final_video_out.mp4 "Video"
 
